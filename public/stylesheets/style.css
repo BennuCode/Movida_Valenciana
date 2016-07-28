@@ -1,0 +1,85 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+#movidaLogo:hover{
+  cursor: pointer;
+}
+
+.listBody{
+  background-color: #000033;
+  width: 60%;
+  margin-left: 20%;
+  padding-bottom: 10px;
+  display: none;
+}
+
+.mainMenu{
+  padding-top: 10px;
+}
+
+/*---------------------------Stilos para la animacion de transicion horizotnal---------------------------------*/
+.active{
+  display: block;
+}
+
+.fadeAway{
+  margin-left: -20%;
+  display: none;
+  opacity: 0.1;
+  height: 50%;
+  width: 30%;
+}
+
+.fadeIn{
+  margin-left: 60%;
+  display: block;
+  opacity: 0.1;
+}
+
+.fadeAwayLeft{
+  margin-left: 80%;
+  display: none;
+  opacity: 0.1;
+  height: 50%;
+  width: 30%;
+}
+
+.fadeInLeft{
+  margin-left: -20%;
+  display: block;
+  opacity: 0.1;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+.mainMenuItem:hover{
+  background-color: silver;
+  cursor: pointer;
+}
+
+.themeBanner{
+  width: 100%;
+  height: 80%;
+}
+
+.postContent{
+  text-align: justify;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.authorInfo{
+  text-align: left;
+  margin-left: 10px;
+}
+
+.authorPhoto{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}

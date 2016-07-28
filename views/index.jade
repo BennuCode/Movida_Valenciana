@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  img(src='/images/mvlogo.jpg' id='movidaLogo' onClick='backToMain()')
+  br
+  button.btn.btn-primary#prevBTN < Prev
+  button.btn.btn-primary#nextBTN Next >
+  #container
+  
+  script(type="text/babel" src="/scripts/themesTest.js")
+  
