@@ -42,3 +42,15 @@ function backToMain(){
   $('.active').removeClass('active');
   $('#0').addClass('active');
 }
+
+function makePostVisible(post_id){
+  console.log(post_id);
+}
+
+function showPostBody(){
+  $('.postBody').slideToggle(200);
+}
+
+function backToList(){
+  $('.postBody').slideToggle(200);
+}

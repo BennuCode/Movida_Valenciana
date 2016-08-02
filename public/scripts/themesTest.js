@@ -19,7 +19,7 @@ var ListContainer = React.createClass({
       }.bind(this)
     });
   },
-  getInitialState: function(){
+  getInitialState: function(){    
     return {data:[]};
   },
   componentDidMount: function(){
@@ -75,11 +75,13 @@ var ThemeList = React.createClass({
 var ThemeBox = React.createClass({
   //Es donde se muestra la descripcion de cada tema.
   render: function(){
+    var style = {backgroundImage: 'url('+this.props.theme_banner+')'}
     return(
-      <div>
-        <img className='themeBanner' src={this.props.theme_banner} />
-        <h1>{this.props.theme_name}</h1>
-        <label>{this.props.theme_description} </label>
+      <div style={style} className='themeBox'>
+        <div className='themeDescription'>
+          <h1>{this.props.theme_name}</h1>
+          <label>{this.props.theme_description} </label>
+        </div>
       </div>
     );
   }
@@ -92,7 +94,7 @@ var ThemePostPreviewContainer = React.createClass({
       dataType: 'json',
       cache: false,
       success: function(data){
-        this.setState({postData: data});
+        this.setState({postReviewData: data});
       }.bind(this),
       error: function(xhr, status, err){
         console.error(this.props.themes_url, status, err.toString());
@@ -100,7 +102,7 @@ var ThemePostPreviewContainer = React.createClass({
     });
   },
   getInitialState: function(){
-    return {postData:[]};
+    return {postReviewData:[]};
   },
   componentDidMount: function(){
     this.loadPostFromServer();
@@ -109,47 +111,113 @@ var ThemePostPreviewContainer = React.createClass({
   render: function(){
     return (
       <ThemePostPreviewList 
-        postData = {this.state.postData} 
+        postReviewData = {this.state.postReviewData} 
         theme = {this.props.theme_name} />
     );
   }
 })
 
 var ThemePostPreviewList = React.createClass({
+  getInitialState: function(){
+    var postData = [
+      { 
+        "title": "Seleccione un post"   
+      }
+    ];
+    return{postData:postData};
+  },
+  updatePostDataState: function(post_id){
+    var postData = [];
+    this.props.postReviewData.map(function(info){
+      if(info.id==post_id){
+        postData = [
+          {
+            "id": info.id,
+            "theme" : info.theme,
+            "author": info.author,
+            "author_profession" : info.author_profession,
+            "author_pic": info.author_pic,
+            "banner_url": info.banner_url,
+            "title": info.title,
+            "content": info.content
+          }
+        ];
+      }
+    });
+    this.setState({postData:postData});
+    showPostBody(); //<--- Funcion ubicada en logic
+  },
   render: function(){
     var theme = this.props.theme;
-    var postPreviewNodes = this.props.postData.map(function(info){
+    var onClickFunction = this.updatePostDataState;
+    var postPreviewNodes = this.props.postReviewData.map(function(info){
       if(info.theme == theme){
         return(
         <div>
+          <hr/>
           <ThemePostPreview 
             post_title = {info.title}
             post_author = {info.author}
-            post_image = {info.banner_url} />
+            post_image = {info.banner_url}
+            post_id = {info.id} 
+            onClick = {onClickFunction.bind(null, info.id)} />
         </div>
       );
-    }
-        
-      
+    }     
     })
     return(
       <div>
         {postPreviewNodes}
+        <PostBody postData={this.state.postData} />
       </div>
     )
   }
 })
 
 var ThemePostPreview = React.createClass({
-  //Es donde se muestra el preview del post. Titulo, autor, fecha e imagen.
+  //Es donde se muestra el preview del post. Titulo, autor, fecha e imagen.  
   render: function(){
     return(
-      <div>
-        <h1>{this.props.post_title}</h1>
-        <label>{this.props.post_author}</label>
-        <img src={this.props.post_image} />
-      </div>  
+      <div className='previewBox' onClick = {this.props.onClick}>
+        <div className='col-lg-7'>
+          <h1>{this.props.post_title}</h1>
+          <label>{this.props.post_author}</label>
+        </div>
+        <div className='col-lg-5'>
+          <img className='previewImage' src={this.props.post_image} />
+        </div>
+      </div>
+      
     )
+  }
+})
+
+var PostBody = React.createClass({
+  //Contenedor, principalmente invisible, donde esta la noticia completa. Se carga con la noticia que sea clickeada.
+  render: function(){
+    return(
+      <div className='postBody'>
+        <div className='postHeader' onClick={backToList}>
+          <h1>{'< '+this.props.postData[0]['theme']}</h1>
+        </div>
+        <img className='postBanner' src={this.props.postData[0]['banner_url']} />
+        <h1>{this.props.postData[0]['title']}</h1>
+        <br/>
+        <br/>
+        <label>{this.props.postData[0]['content']}</label>
+        <br/>
+        <br/>
+        <div className='authorInfo row'>
+          <div className='col-xs-8'>
+            <p>Escrito por: </p>
+            <h3>{this.props.postData[0]['author']} <br/><small>{this.props.postData[0]['author_profession']}</small></h3>
+          </div>
+          <div className='col-xs-4'>
+            <img className='authorPhoto' src={this.props.postData[0]['author_pic']} />
+          </div>
+        </div>
+      </div>
+    );
   }
 })
 

@@ -4,6 +4,7 @@ body {
   color: white;
   background-color: black;
   text-align: center;
+  overflow-x:hidden;
 }
 
 #movidaLogo:hover{
@@ -82,4 +83,26 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+
+/*----------------------------------------------Slide Buttons----------------------------------------------------------*/
+
+.slideBTN{
+  font-family: algerian;
+  position: fixed;
+}
+
+.slideBTN:hover{
+  cursor: pointer;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#prevBTN{
+  left: 100px;
+  top: 50%;
+}
+
+#nextBTN{
+  right: 100px;
+  top: 50%;
 }
