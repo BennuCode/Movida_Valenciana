@@ -28,6 +28,9 @@ var ListContainer = React.createClass({
   render: function(){
     return(
       <div>
+        <img src='/images/list_background.png' id='listBackground' />
+        <img src='/images/mvlogo.jpg' id='movidaLogo' onClick={backToMain}/>
+        <br/>
         <MainMenu />
         <ThemeList data={this.state.data}/>
       </div>
@@ -80,7 +83,6 @@ var ThemeBox = React.createClass({
       <div style={style} className='themeBox'>
         <div className='themeDescription'>
           <h1>{this.props.theme_name}</h1>
-          <label>{this.props.theme_description} </label>
         </div>
       </div>
     );
@@ -150,8 +152,10 @@ var ThemePostPreviewList = React.createClass({
   render: function(){
     var theme = this.props.theme;
     var onClickFunction = this.updatePostDataState;
+    var i = 0;
     var postPreviewNodes = this.props.postReviewData.map(function(info){
       if(info.theme == theme){
+        i++;
         return(
         <div>
           <hr/>
@@ -159,7 +163,8 @@ var ThemePostPreviewList = React.createClass({
             post_title = {info.title}
             post_author = {info.author}
             post_image = {info.banner_url}
-            post_id = {info.id} 
+            post_id = {info.id}
+            post_count = {i}
             onClick = {onClickFunction.bind(null, info.id)} />
         </div>
       );
@@ -177,18 +182,28 @@ var ThemePostPreviewList = React.createClass({
 var ThemePostPreview = React.createClass({
   //Es donde se muestra el preview del post. Titulo, autor, fecha e imagen.  
   render: function(){
+    var post_count = this.props.post_count;
+    var postPreviewClasses = [];
+    if(post_count%2){
+      postPreviewClasses[0] = 'col-lg-7';
+      postPreviewClasses[1] = 'col-lg-5';
+    }
+    else{
+      postPreviewClasses[0] = 'col-lg-7 col-lg-push-5';
+      postPreviewClasses[1] = 'col-lg-5 col-lg-pull-7';     
+    }
+
     return(
       <div className='previewBox' onClick = {this.props.onClick}>
-        <div className='col-lg-7'>
+        <div className={postPreviewClasses[0]}>
           <h1>{this.props.post_title}</h1>
           <label>{this.props.post_author}</label>
         </div>
-        <div className='col-lg-5'>
+        <div className={postPreviewClasses[1]}>
           <img className='previewImage' src={this.props.post_image} />
         </div>
       </div>
-      
-    )
+    );
   }
 })
 
@@ -196,24 +211,26 @@ var PostBody = React.createClass({
   //Contenedor, principalmente invisible, donde esta la noticia completa. Se carga con la noticia que sea clickeada.
   render: function(){
     return(
-      <div className='postBody'>
-        <div className='postHeader' onClick={backToList}>
-          <h1>{'< '+this.props.postData[0]['theme']}</h1>
-        </div>
-        <img className='postBanner' src={this.props.postData[0]['banner_url']} />
-        <h1>{this.props.postData[0]['title']}</h1>
-        <br/>
-        <br/>
-        <label>{this.props.postData[0]['content']}</label>
-        <br/>
-        <br/>
-        <div className='authorInfo row'>
-          <div className='col-xs-8'>
-            <p>Escrito por: </p>
-            <h3>{this.props.postData[0]['author']} <br/><small>{this.props.postData[0]['author_profession']}</small></h3>
+      <div className='postContainer'>
+        <div className='postBody'>
+          <div className='postHeader' onClick={backToList}>
+            <h1>{'< '+this.props.postData[0]['theme']}</h1>
           </div>
-          <div className='col-xs-4'>
-            <img className='authorPhoto' src={this.props.postData[0]['author_pic']} />
+          <img className='postBanner' src={this.props.postData[0]['banner_url']} />
+          <h1>{this.props.postData[0]['title']}</h1>
+          <br/>
+          <br/>
+          <label>{this.props.postData[0]['content']}</label>
+          <br/>
+          <br/>
+          <div className='authorInfo row'>
+            <div className='col-xs-8'>
+              <p>Escrito por: </p>
+              <h3>{this.props.postData[0]['author']} <br/><small>{this.props.postData[0]['author_profession']}</small></h3>
+            </div>
+            <div className='col-xs-4'>
+              <img className='authorPhoto' src={this.props.postData[0]['author_pic']} />
+            </div>
           </div>
         </div>
       </div>

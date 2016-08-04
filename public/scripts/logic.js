@@ -43,14 +43,12 @@ function backToMain(){
   $('#0').addClass('active');
 }
 
-function makePostVisible(post_id){
-  console.log(post_id);
-}
-
 function showPostBody(){
-  $('.postBody').slideToggle(200);
+  $('.postContainer').slideToggle(200);
+  $('body').css('overflow-y', 'hidden');
 }
 
 function backToList(){
-  $('.postBody').slideToggle(200);
+  $('.postContainer').slideToggle(200);
+  $('body').css('overflow-y', 'auto');
 }
