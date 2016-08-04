@@ -78,9 +78,8 @@ var ThemeList = React.createClass({
 var ThemeBox = React.createClass({
   //Es donde se muestra la descripcion de cada tema.
   render: function(){
-    var style = {backgroundImage: 'url('+this.props.theme_banner+')'}
     return(
-      <div style={style} className='themeBox'>
+      <div className='themeBox'>
         <div className='themeDescription'>
           <h1>{this.props.theme_name}</h1>
         </div>
@@ -141,7 +140,10 @@ var ThemePostPreviewList = React.createClass({
             "author_pic": info.author_pic,
             "banner_url": info.banner_url,
             "title": info.title,
-            "content": info.content
+            "content": info.content,
+            "facebook" : info.author_social[0]['facebook'],
+            "twitter" : info.author_social[0]['twitter'],
+            "instagram" : info.author_social[0]['instagram']
           }
         ];
       }
@@ -184,20 +186,22 @@ var ThemePostPreview = React.createClass({
   render: function(){
     var post_count = this.props.post_count;
     var postPreviewClasses = [];
+    var textAlign = {'text-align': 'left'};
     if(post_count%2){
       postPreviewClasses[0] = 'col-lg-7';
       postPreviewClasses[1] = 'col-lg-5';
     }
     else{
       postPreviewClasses[0] = 'col-lg-7 col-lg-push-5';
-      postPreviewClasses[1] = 'col-lg-5 col-lg-pull-7';     
+      postPreviewClasses[1] = 'col-lg-5 col-lg-pull-7';
+      var textAlign = {'text-align': 'right'}     
     }
 
     return(
-      <div className='previewBox' onClick = {this.props.onClick}>
+      <div className='previewBox' style={textAlign} onClick = {this.props.onClick}>
         <div className={postPreviewClasses[0]}>
-          <h1>{this.props.post_title}</h1>
-          <label>{this.props.post_author}</label>
+          <h1 className='postPreviewTitle'>{this.props.post_title}</h1>
+          <label>Por: {this.props.post_author}</label>
         </div>
         <div className={postPreviewClasses[1]}>
           <img className='previewImage' src={this.props.post_image} />
@@ -227,6 +231,14 @@ var PostBody = React.createClass({
             <div className='col-xs-8'>
               <p>Escrito por: </p>
               <h3>{this.props.postData[0]['author']} <br/><small>{this.props.postData[0]['author_profession']}</small></h3>
+              
+              <a className='btn btn-social-icon btn-facebook socialIcon' href={this.props.postData[0]['facebook']} target='_blank'>
+                <span className='fa fa-facebook'></span></a>
+              <a className='btn btn-social-icon btn-twitter socialIcon' href={this.props.postData[0]['twitter']} target='_blank'>
+                <span className='fa fa-twitter'></span></a>
+              <a className='btn btn-social-icon btn-instagram socialIcon' href={this.props.postData[0]['instagram']} target='_blank'>
+                <span className='fa fa-instagram'></span></a>
+
             </div>
             <div className='col-xs-4'>
               <img className='authorPhoto' src={this.props.postData[0]['author_pic']} />

@@ -9,8 +9,6 @@
   height: 100%;
   width: 100%;
   color: white;
-  opacity: 0.9;
-  background-color: black;
 }
 
 .themeDescription h1 {
@@ -22,8 +20,7 @@
 }
 
 .previewBox:hover {
-  background-color: white;
-  color: black;
+  color: silver;
   cursor:pointer;
 }
 
