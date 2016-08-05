@@ -2,62 +2,66 @@
   {
     "id": 1,
     "theme" : "Eventos",
-    "author": "Fernando Gonzalez",
+    "author": "Manuel Rodriguez",
     "author_social": [{
-        "facebook" : "https://www.facebook.com/feragon42",
-        "twitter" : "https://twitter.com/Feragon42",
-        "instagram" : "https://www.instagram.com/movidavalenciana/"    
+        "facebook" : "#",
+        "twitter" : "#",
+        "instagram" : "#"    
     }],
-    "author_profession" : "Tenista ProPlayer",
-    "author_pic": "http://www.duna.cl/media/2012/03/Fernando-Gonzalez.jpg",
-    "banner_url": "https://cdn2.vox-cdn.com/thumbor/ie_REzAR9GuOcmOD03TGyaVL9Gk=/0x266:1024x949/1280x854/cdn0.vox-cdn.com/uploads/chorus_image/image/48942277/N3DS_PokemonSuperMysteryDungeon_MainIllustration_png_jpgcopy.0.0.jpg",
-    "title": "Pokemon Go! Mas que inmediato!!!",
-    "content": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo 'Contenido aquí, contenido aquí'. Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de 'Lorem Ipsum' va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo)." 
+    "author_profession" : "Party Handler",
+    "author_pic": "http://difundir.org/wp-content/uploads/2014/09/Hombre-fiestero.jpg",
+    "banner_url": "https://i.ytimg.com/vi/5cw0ZWkGyg8/maxresdefault.jpg",
+    "title": "Chino y Nacho. Concierto Espectacular!",
+    "content": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo 'Contenido aquí, contenido aquí'. Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de 'Lorem Ipsum' va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).",
+    "date":"27/06/2016" 
   },
   {
     "id": 2,
     "theme" : "Tecnologia",
-    "author": "Jose Sanchez",
-    "author_social": [{
-        "facebook" : "https://www.facebook.com/feragon42",
-        "twitter" : "https://twitter.com/Feragon42",
-        "instagram" : "https://www.instagram.com/movidavalenciana/"    
-    }],
-    "author_profession" : "Algo ahi",
-    "author_pic": "http://img.clasf.co.ve/2014/09/04/Mascara-De-Caballo-Horse-Head-Mask-20140904231841.jpg",
-    "banner_url": "http://www.somosxbox.com/wp-content/uploads/2016/05/overwatch-4k.jpg",
-    "title": "El BOOM de Overwatch",
-    "content": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo 'Contenido aquí, contenido aquí'. Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de 'Lorem Ipsum' va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo)." 
-  },
-  {
-    "id": 3,
-    "theme" : "Gastronomia",
-    "author": "Ricardo Sabatino",
-    "author_social": [{
-        "facebook" : "https://www.facebook.com/feragon42",
-        "twitter" : "https://twitter.com/Feragon42",
-        "instagram" : "https://www.instagram.com/movidavalenciana/"    
-    }],
-    "author_profession" : "Desarrollador en COTOLabs",
-    "author_pic": "https://lh5.googleusercontent.com/-6T6H2Yl3h6M/AAAAAAAAAAI/AAAAAAAAA4E/EccVvydPj1E/photo.jpg",
-    "banner_url": "http://www.desalpes-luzern.ch/images/content/mood/restaurant-food-salat-2.jpg",
-    "title": "Post serio porque los otros son unos becerros",
-    "content": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo 'Contenido aquí, contenido aquí'. Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de 'Lorem Ipsum' va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo)." 
-  },
-  {
-    "id": 4,
-    "theme" : "Eventos",
     "author": "Fernando Gonzalez",
     "author_social": [{
         "facebook" : "https://www.facebook.com/feragon42",
         "twitter" : "https://twitter.com/Feragon42",
         "instagram" : "https://www.instagram.com/movidavalenciana/"    
     }],
-    "author_profession" : "Tenista ProPlayer",
-    "author_pic": "http://www.duna.cl/media/2012/03/Fernando-Gonzalez.jpg",
-    "banner_url": "http://static.srcdn.com/wp-content/uploads/Warcraft-Movie-Durotan-and-Orgrim.jpg",
-    "title": "Warcraft: Tremenda Pelicula!",
-    "content": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo 'Contenido aquí, contenido aquí'. Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de 'Lorem Ipsum' va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo)." 
+    "author_profession" : "FullStack Developer in Bennu",
+    "author_pic": "http://feragon.com.ve/images/profilepic.jpg",
+    "banner_url": "https://blog.algolia.com/wp-content/uploads/2015/12/react-native.png",
+    "title": "REACT La nueva arma definitiva para FRONT END",
+    "content": "Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, consecteur, en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de de Finnibus Bonorum et Malorum (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, Lorem ipsum dolor sit amet.., viene de una linea en la sección 1.10.32 El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de de Finibus Bonorum et Malorum por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.",
+    "date":"28/06/2016" 
+  },
+  {
+    "id": 3,
+    "theme" : "Tecnologia",
+    "author": "Ricardo Sabatino",
+    "author_social": [{
+        "facebook" : "#",
+        "twitter" : "#",
+        "instagram" : "#"    
+    }],
+    "author_profession" : "CTO in Bennu",
+    "author_pic": "https://lh5.googleusercontent.com/-6T6H2Yl3h6M/AAAAAAAAAAI/AAAAAAAAA4E/EccVvydPj1E/photo.jpg",
+    "banner_url": "http://www.mywebdesignboston.com/sites/default/files/Responsive-design-multiscreen.jpg",
+    "title": "No te cuadra en el telefono? Responsive Design",
+    "content": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo 'Contenido aquí, contenido aquí'. Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de 'Lorem Ipsum' va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).",
+    "date":"05/06/2016" 
+  },
+  {
+    "id": 4,
+    "theme" : "Tecnologia",
+    "author": "Fernando Gonzalez",
+    "author_social": [{
+        "facebook" : "https://www.facebook.com/feragon42",
+        "twitter" : "https://twitter.com/Feragon42",
+        "instagram" : "https://www.instagram.com/movidavalenciana/"    
+    }],
+    "author_profession" : "FullStack Developer in Bennu",
+    "author_pic": "http://feragon.com.ve/images/profilepic.jpg",
+    "banner_url": "http://www.digiworks.es/digiworks-wp-4-0/wp-content/uploads/2016/06/web-applications-large.jpg",
+    "title": "Desarrollo Web para NO entendidos",
+    "content": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo 'Contenido aquí, contenido aquí'. Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de 'Lorem Ipsum' va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).",
+    "date":"01/07/2016" 
   },
   {
     "id": 5,
@@ -68,11 +72,28 @@
         "twitter" : "https://twitter.com/Feragon42",
         "instagram" : "https://www.instagram.com/movidavalenciana/"    
     }],
-    "author_profession" : "Tenista ProPlayer",
-    "author_pic": "http://www.duna.cl/media/2012/03/Fernando-Gonzalez.jpg",
+    "author_profession" : "FullStack Developer in Bennu",
+    "author_pic": "http://feragon.com.ve/images/profilepic.jpg",
     "banner_url": "http://ocio.doncomos.com/wp-content/uploads/sites/12/2014/11/000-jugar-domin%C3%B3.png",
-    "title": "Jugar Domino como un pro",
-    "content": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo 'Contenido aquí, contenido aquí'. Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de 'Lorem Ipsum' va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo)." 
+    "title": "Gran torneo de Domino",
+    "content": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo 'Contenido aquí, contenido aquí'. Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de 'Lorem Ipsum' va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).",
+    "date":"02/07/2016" 
+  },
+  {
+    "id": 1,
+    "theme" : "Eventos",
+    "author": "Manuel Rodriguez",
+    "author_social": [{
+        "facebook" : "#",
+        "twitter" : "#",
+        "instagram" : "#"    
+    }],
+    "author_profession" : "Party Handler",
+    "author_pic": "http://difundir.org/wp-content/uploads/2014/09/Hombre-fiestero.jpg",
+    "banner_url": "https://i.ytimg.com/vi/NQ5TgoFrUCU/hqdefault.jpg",
+    "title": "LA PARTY! El gran evento del ANO!",
+    "content": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo 'Contenido aquí, contenido aquí'. Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de 'Lorem Ipsum' va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).",
+    "date":"05/08/2016" 
   },
   {
     "id": 6,
@@ -83,10 +104,43 @@
         "twitter" : "https://twitter.com/Feragon42",
         "instagram" : "https://www.instagram.com/movidavalenciana/"    
     }],
-    "author_profession" : "Desarrollador en COTOLabs",
+    "author_profession" : "CTO in Bennu",
     "author_pic": "https://lh5.googleusercontent.com/-6T6H2Yl3h6M/AAAAAAAAAAI/AAAAAAAAA4E/EccVvydPj1E/photo.jpg",
-    "banner_url": "http://7boom.mx/wp-content/uploads/2015/03/TGIF_Stacked-Burger-LR.jpg",
-    "title": "Donde encontrar unas hamburguesas bien balurdas",
-    "content": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo 'Contenido aquí, contenido aquí'. Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de 'Lorem Ipsum' va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo)." 
+    "banner_url": "https://media-cdn.tripadvisor.com/media/photo-s/08/0e/9f/9d/the-handsome-hobo-pizzeria.jpg",
+    "title": "El place de la Pizza",
+    "content": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo 'Contenido aquí, contenido aquí'. Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de 'Lorem Ipsum' va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).",
+    "date":"5/08/2016" 
+  },
+  {
+    "id": 7,
+    "theme" : "Tecnologia",
+    "author": "Fernando Gonzalez",
+    "author_social": [{
+        "facebook" : "https://www.facebook.com/feragon42",
+        "twitter" : "https://twitter.com/Feragon42",
+        "instagram" : "https://www.instagram.com/movidavalenciana/"    
+    }],
+    "author_profession" : "FullStack Developer in Bennu",
+    "author_pic": "http://feragon.com.ve/images/profilepic.jpg",
+    "banner_url": "https://i.ytimg.com/vi/F7mcDyBXJOo/maxresdefault.jpg",
+    "title": "5 similitudes entre Pokemon Go e Hipnosis Colectiva",
+    "content": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo 'Contenido aquí, contenido aquí'. Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de 'Lorem Ipsum' va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).",
+    "date":"01/07/2016" 
+  },
+  {
+    "id": 8,
+    "theme" : "Tecnologia",
+    "author": "Fernando Gonzalez",
+    "author_social": [{
+        "facebook" : "https://www.facebook.com/feragon42",
+        "twitter" : "https://twitter.com/Feragon42",
+        "instagram" : "https://www.instagram.com/movidavalenciana/"    
+    }],
+    "author_profession" : "FullStack Developer in Bennu",
+    "author_pic": "http://feragon.com.ve/images/profilepic.jpg",
+    "banner_url": "http://wallpapersrang.com/wp-content/uploads/2015/12/wallpapers-for-money-sign-wallpaper-300x250.jpg",
+    "title": "Quieres ser tu propio jefe? No, no me preguntes como.",
+    "content": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo 'Contenido aquí, contenido aquí'. Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de 'Lorem Ipsum' va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).",
+    "date":"01/07/2016" 
   }
 ]

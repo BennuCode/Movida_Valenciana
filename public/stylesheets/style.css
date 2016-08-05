@@ -72,7 +72,6 @@ footer{
   position: fixed;
   bottom: 0px;
   left: 30%;
-  background-color: black;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -82,8 +81,13 @@ footer i {
 }
 
 footer .btn-social-icon {
-  background-color: white;
-  color: black;
+  background-color: transparent;
+  color: white;
+}
+
+footer .btn-social-icon:hover {
+  background-color: transparent;
+  color: silver;
 }
 
 /*------------------------------------------------------------------------------------------------------------*/
