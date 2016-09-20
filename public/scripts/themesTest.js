@@ -59,10 +59,9 @@ var ThemeList = React.createClass({
     var themesNodes = this.props.data.map(function (info){
       return(
         <div className='listBody col-lg-4' id={info.id}>
-          <ThemeBox 
-            theme_name={info.theme_name}
-            theme_banner={info.theme_banner}
-            theme_description={info.theme_description}/>
+          <div className='themeDescription'>
+            <h1>{info.theme_name}</h1>
+          </div>
           <ThemePostPreviewContainer theme_name={info.theme_name} post_url="postController/post"/>
         </div>
       );
@@ -72,19 +71,6 @@ var ThemeList = React.createClass({
         {themesNodes}
       </div>
     )
-  }
-})
-
-var ThemeBox = React.createClass({
-  //Es donde se muestra la descripcion de cada tema.
-  render: function(){
-    return(
-      <div className='themeBox'>
-        <div className='themeDescription'>
-          <h1>{this.props.theme_name}</h1>
-        </div>
-      </div>
-    );
   }
 })
 
@@ -107,7 +93,6 @@ var ThemePostPreviewContainer = React.createClass({
   },
   componentDidMount: function(){
     this.loadPostFromServer();
-    setInterval(this.loadPostFromServer, 2000);
   },
   render: function(){
     return (
@@ -154,10 +139,10 @@ var ThemePostPreviewList = React.createClass({
   render: function(){
     var theme = this.props.theme;
     var onClickFunction = this.updatePostDataState;
-    var i = 0;
+    var postSideSelector = 0;
     var postPreviewNodes = this.props.postReviewData.map(function(info){
       if(info.theme == theme){
-        i++;
+        postSideSelector++;
         return(
         <div>
           <hr/>
@@ -166,7 +151,7 @@ var ThemePostPreviewList = React.createClass({
             post_author = {info.author}
             post_image = {info.banner_url}
             post_id = {info.id}
-            post_count = {i}
+            post_side_selector = {postSideSelector}
             onClick = {onClickFunction.bind(null, info.id)} />
         </div>
       );
@@ -184,10 +169,10 @@ var ThemePostPreviewList = React.createClass({
 var ThemePostPreview = React.createClass({
   //Es donde se muestra el preview del post. Titulo, autor, fecha e imagen.  
   render: function(){
-    var post_count = this.props.post_count;
+    var post_side_selector = this.props.post_side_selector;
     var postPreviewClasses = [];
     var textAlign = {'text-align': 'left'};
-    if(post_count%2){
+    if(post_side_selector%2){
       postPreviewClasses[0] = 'col-lg-7';
       postPreviewClasses[1] = 'col-lg-5';
     }
@@ -251,6 +236,6 @@ var PostBody = React.createClass({
 })
 
 ReactDOM.render(
-  <ListContainer themes_url="postController/themes" pollInterval={2000}/>,
+  <ListContainer themes_url="postController/themes"/>,
   document.getElementById('container')
 );

@@ -5,6 +5,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+//Conection to db
+var mongo = require('mongodb');
+var monk = require('monk');
+var db = monk('mongodb://bennu:movida123@ds017886.mlab.com:17886/movida_valenciana');
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var postController = require('./routes/postController');
@@ -22,6 +27,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+//Make our db accessible to our router
+app.use(function(req,res,next){
+  req.db = db;
+  next();
+});
 
 app.use('/', routes);
 app.use('/users', users);
